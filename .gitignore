@@ -1,0 +1,11 @@
+# Ignore compiled artifacts and build cache
+/target/
+
+# Ignore editor configuration files
+.vscode/
+*.swp
+*.swo
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
