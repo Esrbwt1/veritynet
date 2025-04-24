@@ -1,5 +1,6 @@
 // src/p2p/mod.rs
 pub mod node; // Declare a submodule named 'node'
+pub mod signaling_types; // Declare the submodule
 
 pub use node::P2PNode; // Make P2PNode struct accessible via veritynet::p2p::P2PNode
 

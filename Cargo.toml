@@ -14,3 +14,7 @@ webrtc = "0.8" # Core WebRTC library (features handled internally or via depende
 futures = "0.3"                                   # Async utilities often used with webrtc-rs
 rand = "0.8"                                      # For generating random IDs/tokens if needed later
 # Note: We might need more specific WebRTC features later (e.g., for data channels)
+# WebSocket client for signaling
+tokio-tungstenite = { version = "0.25", features = ["native-tls"] } # Use native-tls for simplicity on Windows
+url = "2.5"                     # For parsing WebSocket server URLs
+futures-util = "0.3"            # Stream utilities often needed with websockets
