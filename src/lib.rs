@@ -1,6 +1,6 @@
 // Re-export log macros for convenience
 pub use log::{debug, error, info, trace, warn};
-
+pub mod p2p; // Declare the p2p module
 // Public function to initialize logging (can be called by node binary later)
 pub fn setup_logging(log_level: Option<&str>) {
     let log_level = log_level.unwrap_or("info"); // Default to info level
